@@ -7,7 +7,10 @@
 #' @param sheaf This should be the sheaf structure from create_sheaf.
 #'
 #' @return This will return a sheaf assignment pair as an altered data frame.
+#' @import dplyr
+#' @importFrom magrittr %>%
 #' @export
+#'
 #'
 #' @examples
 #' read_assignment(source = c("A", "B", "C"),
@@ -20,9 +23,9 @@
 sheaf_assignment <- function(assignment, sheaf) {
   {{assignment}} %>%
     select(vars, values, source) %>%
-    pivot_wider(names_from = vars, values_from = values) %>%
+    tidyr::pivot_wider(names_from = vars, values_from = values) %>%
     right_join({{sheaf}}, by = c(source = "source"), multiple="all") %>%
-    nest(stalkinput = !source & !map & !dest) %>%
-    mutate(stalkoutput = map2(.x= map, .y = stalkinput, .f = exec))
+    tidyr::nest(stalkinput = !source & !map & !dest) %>%
+    mutate(stalkoutput = purrr::map2(.x= map, .y = stalkinput, .f = exec))
 
 }
