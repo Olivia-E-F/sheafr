@@ -25,6 +25,6 @@ read_assignment
 }
 \examples{
 read_assignment(source = c("A", "B", "C"),
-values = c(2, 4, 3),
-variables = c("x", "y", "z"))
+                values = c(2, 4, 3),
+                variables = c("x", "y", "z"))
 }
