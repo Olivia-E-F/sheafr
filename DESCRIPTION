@@ -6,7 +6,10 @@ Authors@R:
            comment = c(ORCID = "NA")),
     person("Michael", "Robinson", , "michaelr@american.edu", role = c("aut"),
            comment = c(ORCID = "0000-0003-0766-3301")))
-Description: What the package does (one paragraph).
+Description: Sheafr is a package meant to standardize sheaf manipulation in R. 
+The core functions allow you to read in assignments and pair them with your sheaves.
+Furthermore, functions for extra tpological manupulation and calculations are included.
+Examples include measurements of consistency, as well as filtrations and extensions.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
@@ -14,6 +17,7 @@ RoxygenNote: 7.2.0
 Suggests: 
     knitr,
     rmarkdown,
-    spelling
+    spelling, 
+    tidyverse
 Language: en-US
 VignetteBuilder: knitr
