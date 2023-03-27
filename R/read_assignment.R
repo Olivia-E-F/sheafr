@@ -18,4 +18,5 @@ read_assignment <- function(source, values, variables) {
   as.data.frame(tibble::tibble(source = {{source}},
                        values = {{values}},
                        vars = {{variables}}))
+
 }

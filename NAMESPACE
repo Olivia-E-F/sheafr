@@ -2,3 +2,4 @@
 
 export(create_sheaf)
 export(read_assignment)
+export(sheaf_assignment)
