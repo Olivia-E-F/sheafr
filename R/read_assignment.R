@@ -6,7 +6,7 @@
 #' @param values A list of doubles. The values attributed to variables at each node.
 #' @param variables A list of characters. The variables at each node.
 #'
-#' @return returns a formatted data frame
+#' @return returns a formatted [data.frame()].
 #' @export
 #'
 #' @examples

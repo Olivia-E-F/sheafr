@@ -9,7 +9,7 @@
 #' @param source A list of originating nodes.
 #' @param destination A list of terminal nodes.
 #'
-#' @return The output of this function is a data frame.
+#' @return Returns a formatted [data.frame()].
 #' @export
 #'
 #' @examples
