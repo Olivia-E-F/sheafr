@@ -6,7 +6,7 @@
 #' @param assignment This should be the outputted data frame from read_assignment.
 #' @param sheaf This should be the sheaf structure from create_sheaf.
 #'
-#' @return This will return a sheaf assignment pair as an altered data frame.
+#' @return Returns a sheaf assignment pair as an altered [data.frame()].
 #' @import dplyr
 #' @importFrom magrittr %>%
 #' @export
