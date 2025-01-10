@@ -6,7 +6,7 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of sheafr is to …
+Sheafr is an R package built to bring the processes and functionality of Pysehaf to the R ecosystem. This package allows users to build maniplulate sheaves and calculate consistency radii.
 
 ## Installation
 
